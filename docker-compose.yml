@@ -2,8 +2,9 @@ services:
   postgres-postgresql:
     image: postgres:17.0
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
     environment:
+      - POSTGRES_DATABASE=alchemy
       - POSTGRES_USER=elom
       - POSTGRES_PASSWORD=123456
     ports:
