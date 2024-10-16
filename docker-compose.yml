@@ -1,12 +1,9 @@
 services:
   postgres-postgresql:
     image: postgres:17.0
-    volumes:
-
     environment:
-      - POSTGRES_DATABASE=alchemy
+      - POSTGRES_DB=alchemy
       - POSTGRES_USER=elom
       - POSTGRES_PASSWORD=123456
     ports:
       - 5432:5432
-      
